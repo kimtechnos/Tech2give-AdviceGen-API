@@ -8,23 +8,15 @@ const Advices = () => {
     text: "my first advice of the day",
   });
 
-  const [advice, setAdvice] = useState([]);
+  const loadAdvice = async () => {
+    const response = await fetch("https://api.adviceslip.com/advice");
+    const data = await response.json();
+    setAdvices({ text: data.slip.advice });
+  };
 
   useEffect(() => {
-    async function loadAdvice() {
-      const response = await fetch("https://api.adviceslip.com/advice");
-      const data = await response.json();
-      setAdvice((prev) => [...prev, data.slip.advice]);
-    }
     loadAdvice();
   }, []);
-
-  const random = () => {
-    if (advice.length > 0) {
-      const select = advice[Math.floor(Math.random() * advice.length)];
-      setAdvices({ text: select });
-    }
-  };
 
   return (
     <div className="container">
@@ -33,7 +25,7 @@ const Advices = () => {
       <div className="line"></div>
       <div className="bottom">
         <div className="icons">
-          <img src={reload} onClick={random} alt="reload" />
+          <img src={reload} onClick={loadAdvice} alt="reload" />
           <img src={share} alt="share" />
         </div>
       </div>
