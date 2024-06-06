@@ -27,6 +27,13 @@
   font-weight: 200;
   color: white;
 }
+.error {
+  padding: 60px 110px;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 200;
+  color: white;
+}
 @media screen and (max-width: 48.87em) {
   .advice {
     font-weight: 100;
