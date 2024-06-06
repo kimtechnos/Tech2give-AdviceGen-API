@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 10rem;
+  background-color: rgb(75, 129, 111);
+  max-width: 50%;
+  border-radius: 1.5rem;
+  padding: 20rem;
+  height: auto;
+}
+.header {
+  color: rgb(9, 17, 128);
+  margin-bottom: 10rem;
+  font-size: 6rem;
+}
+.advice {
+  padding: 60px 110px;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 200;
+  color: white;
+}
+.line {
+  width: 70rem;
+  height: 3px;
+  background: white;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px;
+}
+.icons {
+  display: flex;
+  gap: 4rem;
+  padding: 3rem;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+  padding: 2rem;
+  background-color: rgb(210, 117, 46);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icons img:hover {
+  background-color: rgb(34, 72, 96);
+}
