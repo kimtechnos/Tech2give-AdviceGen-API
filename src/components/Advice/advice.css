@@ -1,13 +1,14 @@
 .container {
-  display: flex;
+  display: flex;  
   flex-direction: column;
   align-items: center;
   margin:0 auto;
-  margin-top: 10rem;
+  margin-top:5rem;
   background-color: rgb(75, 129, 111);
-  max-width: 70%; 
+  width: 70%; 
   border-radius: 1.5rem;
-  padding: 3rem;
+  padding: 2rem;
+  border: 2px solid white;
 }
 .header {
   color: rgb(9, 17, 128);
@@ -21,7 +22,7 @@
   }
 }
 .advice {
-  padding: 60px 110px;
+  /* padding: 60px 110px; */
   font-size: 3rem;
   text-align: center;
   font-weight: 200;
