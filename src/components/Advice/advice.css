@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin:0 auto;
   margin-top: 10rem;
   background-color: rgb(75, 129, 111);
-  max-width: 70%;
+  max-width: 70%; 
   border-radius: 1.5rem;
   padding: 3rem;
 }
 .header {
   color: rgb(9, 17, 128);
   margin-bottom: 10rem;
-  font-size: 6rem;
+  font-size: 3rem;
 }
 @media screen and (max-width: 48.87em) {
   .header {
